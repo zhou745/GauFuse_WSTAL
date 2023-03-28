@@ -1,2 +1,3 @@
 # GauFuse_WSTAL
-the code is coming soon.
+## just run:
+### python main.py
