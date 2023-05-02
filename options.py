@@ -9,7 +9,7 @@ parser.add_argument('--run-type', type=int, default=0,
 parser.add_argument('--model-id', type=str, default="gau_fuse_wstal", help='model id for saving model')
 # loading model
 parser.add_argument('--pretrained', default= False,action='store_true', help='is pretrained model for eval')
-parser.add_argument('--use_new_predictor',type=bool, default=False, help='if the fusion predioctor is used')
+parser.add_argument('--use_new_predictor',type=bool, default=True, help='if the fusion predioctor is used')
 parser.add_argument('--load_epoch', type=int, default=350)
 parser.add_argument('--pretrained_epoch', type=int, default=200)
 parser.add_argument('--load_ckpt_path', type=str, default='./gau_fuse_wstal', help='dir of loaded model')
