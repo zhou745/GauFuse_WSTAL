@@ -4,4 +4,4 @@
 ## data preparation
 ### please follow https://github.com/sujoyp/wtalc-pytorch and place them in data/Thumos14reduced/
 
-### the environment and dataset format will be checked later
+### the environment will be checked later
