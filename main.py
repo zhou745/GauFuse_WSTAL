@@ -54,6 +54,5 @@ if __name__ == '__main__':
     #1:  our method
 
     training_type = 0
-    training_type = 1
 
     main(training_type=training_type)
