@@ -1,0 +1,126 @@
+################################################################################
+gpus: [0]
+run_type: 1
+model_id: gau_fuse_wstal
+pretrained: False
+use_new_predictor: True
+load_epoch: 350
+pretrained_epoch: 200
+load_ckpt_path: ./gau_fuse_wstal
+eval_temperature: 0.2
+dist_temperature: 0.1
+dist_temperature_scale: 0.02
+dist_temperature_decay: [1.0, 1.0, 1.0, 0.1, 0.1, 0.08]
+save_interval: 5
+dataset_root: ./data/
+dataset_name: Thumos14reduced
+video_num: 200
+feature_type: I3D
+inp_feat_num: 2048
+out_feat_num: 2048
+class_num: 20
+scale_factor: 20.0
+T: 0.2
+w: 0.5
+batch_size: 10
+lr: 5e-05
+lr_decay: 0.8
+weight_decay: 0.0005
+dropout: 0.6
+seed: 2
+max_epoch: 350
+mu_num: 8
+mu_queue_len: 5
+em_iter: 2
+warmup_epoch: 100
+class_threshold: 0.16
+start_threshold: 0.001
+end_threshold: 0.04
+threshold_interval: 0.002
+decay_type: 3
+changeLR_list: [80, 200, 245, 260, 350]
+changeLR_value: [5e-05, 4e-05, 2.048e-05, 5.12e-07, 2.56e-07, 5.12e-08]
+use_mem: 1
+use_foreloss: 1
+use_backloss: 1
+use_attloss: 1
+frm_coef: 0.85
+frm_coef_pseudo: 0.8
+fore_loss_weight: 1
+spl_loss_weight: 1.0
+back_loss_weight: 0.2
+att_loss_weight: 0.1
+dist_loss: 10.0
+dist_loss_increase: 1.035
+dist_power: 5.5
+load_dist_ckpt: []
+dist_epoch: [200, 230, 245, 260, 275, 300]
+max_dist_weight: 50.0
+noise_rate: 0.0
+use_noise: 0
+gpu_ids: [0]
+********************************************************************************
+350 73.19 68.43 59.72 50.85 41.70 26.51 12.54 47.56 96.47
+################################################################################
+gpus: [0]
+run_type: 1
+model_id: gau_fuse_wstal
+pretrained: False
+use_new_predictor: True
+load_epoch: 350
+pretrained_epoch: 200
+load_ckpt_path: ./gau_fuse_wstal
+eval_temperature: 0.2
+dist_temperature: 0.1
+dist_temperature_scale: 0.02
+dist_temperature_decay: [1.0, 1.0, 1.0, 0.1, 0.1, 0.08]
+save_interval: 5
+dataset_root: ./data/
+dataset_name: Thumos14reduced
+video_num: 200
+feature_type: I3D
+inp_feat_num: 2048
+out_feat_num: 2048
+class_num: 20
+scale_factor: 20.0
+T: 0.2
+w: 0.5
+batch_size: 10
+lr: 5e-05
+lr_decay: 0.8
+weight_decay: 0.0005
+dropout: 0.6
+seed: 2
+max_epoch: 350
+mu_num: 8
+mu_queue_len: 5
+em_iter: 2
+warmup_epoch: 100
+class_threshold: 0.16
+start_threshold: 0.001
+end_threshold: 0.04
+threshold_interval: 0.002
+decay_type: 3
+changeLR_list: [80, 200, 245, 260, 350]
+changeLR_value: [5e-05, 4e-05, 2.048e-05, 5.12e-07, 2.56e-07, 5.12e-08]
+use_mem: 1
+use_foreloss: 1
+use_backloss: 1
+use_attloss: 1
+frm_coef: 0.85
+frm_coef_pseudo: 0.8
+fore_loss_weight: 1
+spl_loss_weight: 1.0
+back_loss_weight: 0.2
+att_loss_weight: 0.1
+dist_loss: 10.0
+dist_loss_increase: 1.035
+dist_power: 5.5
+load_dist_ckpt: []
+dist_epoch: [200, 230, 245, 260, 275, 300]
+max_dist_weight: 50.0
+noise_rate: 0.0
+use_noise: 0
+gpu_ids: [0]
+********************************************************************************
+350 74.03 68.91 60.59 51.21 42.42 26.29 13.52 48.14 96.57
