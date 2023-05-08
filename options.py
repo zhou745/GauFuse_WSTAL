@@ -4,7 +4,7 @@ parser = argparse.ArgumentParser(description='WSTAL')
 # seed 2 1986 23068
 # basic setting
 parser.add_argument('--gpus', type=int, default=[0], nargs='+', help='used gpu')
-parser.add_argument('--run-type', type=int, default=0,
+parser.add_argument('--run-type', type=int, default=1,
                     help='train (0) or evaluate (1)')
 parser.add_argument('--model-id', type=str, default="gau_fuse_wstal", help='model id for saving model')
 # loading model
